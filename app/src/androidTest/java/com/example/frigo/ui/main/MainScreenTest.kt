@@ -3,6 +3,7 @@ package com.example.frigo.ui.main
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
+import com.frigo.frigo.ui.main.MainScreen
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

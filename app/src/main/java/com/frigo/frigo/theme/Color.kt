@@ -1,4 +1,4 @@
-package com.example.frigo.theme
+package com.frigo.frigo.theme
 
 import androidx.compose.ui.graphics.Color
 

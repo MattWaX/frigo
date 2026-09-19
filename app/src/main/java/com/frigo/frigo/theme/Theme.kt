@@ -1,4 +1,4 @@
-package com.example.frigo.theme
+package com.frigo.frigo.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

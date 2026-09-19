@@ -1,6 +1,8 @@
 package com.example.frigo.ui.main
 
-import com.example.frigo.data.DataRepository
+import com.frigo.frigo.data.DataRepository
+import com.frigo.frigo.ui.main.MainScreenUiState
+import com.frigo.frigo.ui.main.MainScreenViewModel
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first

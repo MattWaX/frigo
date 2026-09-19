@@ -13,7 +13,8 @@ FoodPantry {
 
 Recipe {
     name
-    FoodItem[]
+    servings
+    FoodItem[] // variazioni
     Passaggio[] :String
 }
 

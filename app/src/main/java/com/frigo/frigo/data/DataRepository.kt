@@ -1,4 +1,4 @@
-package com.example.frigo.data
+package com.frigo.frigo.data
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

@@ -1,9 +1,8 @@
-package com.example.frigo.ui.main
+package com.frigo.frigo.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.frigo.data.DataRepository
-import com.example.frigo.ui.main.MainScreenUiState.Success
+import com.frigo.frigo.data.DataRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.catch
@@ -13,7 +12,7 @@ import kotlinx.coroutines.flow.stateIn
 class MainScreenViewModel(dataRepository: DataRepository) : ViewModel() {
   val uiState: StateFlow<MainScreenUiState> =
     dataRepository.data
-      .map<List<String>, MainScreenUiState>(::Success)
+      .map<List<String>, MainScreenUiState>(MainScreenUiState::Success)
       .catch { emit(MainScreenUiState.Error(it)) }
       .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), MainScreenUiState.Loading)
 }
